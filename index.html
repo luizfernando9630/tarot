@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Guia Definitivo de Tarot | Jornada de Autoconhecimento</title>
+  <meta name="description" content="Um guia completo de Tarot como ferramenta de autoconhecimento. Do iniciante ao mestre." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Playfair Display (serif) + Inter (sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            mystic: {
+              gold: '#f5c542',
+            },
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' },
+            },
+            glow: {
+              '0%, 100%': { opacity: '0.4' },
+              '50%': { opacity: '0.8' },
+            },
+          },
+          animation: {
+            float: 'float 6s ease-in-out infinite',
+            glow: 'glow 5s ease-in-out infinite',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body { background-color: #020617; }
+    .gold-text {
+      background: linear-gradient(to right, #fde68a, #f5c542, #d4a017);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .star-bg {
+      background-image: radial-gradient(circle at 20% 20%, rgba(245,197,66,0.08) 0, transparent 45%),
+                        radial-gradient(circle at 80% 60%, rgba(99,102,241,0.12) 0, transparent 45%);
+    }
+  </style>
+</head>
+
+<body class="font-sans text-slate-300 antialiased selection:bg-amber-500/30">
+
+  <!-- ============ HERO ============ -->
+  <header class="relative overflow-hidden star-bg bg-slate-950">
+    <!-- glow orbs -->
+    <div class="pointer-events-none absolute -top-32 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-amber-500/20 blur-3xl animate-glow"></div>
+    <div class="pointer-events-none absolute bottom-0 right-0 h-80 w-80 rounded-full bg-indigo-700/20 blur-3xl animate-glow"></div>
+
+    <div class="relative mx-auto max-w-5xl px-6 pt-16 pb-24 text-center sm:pt-24">
+      <!-- Badge -->
+      <span class="mb-8 inline-flex items-center gap-2 rounded-full border border-amber-500/40 bg-amber-500/5 px-5 py-2 text-sm font-medium tracking-wide text-amber-300">
+        <i data-lucide="sparkles" class="h-4 w-4"></i>
+        O Guia Definitivo de Tarot
+      </span>
+
+      <h1 class="font-serif text-4xl font-bold leading-tight text-slate-100 sm:text-5xl md:text-6xl">
+        O Tarot como ferramenta de
+        <span class="gold-text">Entendimento</span>
+        e Autoconhecimento Profundo
+      </h1>
+
+      <p class="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-slate-400">
+        Esqueça a adivinhação superficial. Esta é uma jornada completa — do iniciante ao mestre — para
+        decifrar os arquétipos da sua mente e transformar cada carta em um espelho da sua alma.
+      </p>
+
+      <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <a href="#oferta"
+           class="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 to-yellow-600 px-8 py-4 text-base font-semibold text-slate-950 shadow-lg shadow-amber-900/40 transition hover:scale-[1.03] hover:shadow-amber-700/50">
+          Quero Transformar Minha Jornada Agora
+          <i data-lucide="arrow-right" class="h-5 w-5 transition group-hover:translate-x-1"></i>
+        </a>
+      </div>
+
+      <p class="mt-6 flex items-center justify-center gap-2 text-sm text-slate-500">
+        <i data-lucide="shield-check" class="h-4 w-4 text-amber-400"></i>
+        Acesso imediato e vitalício · Garantia de 7 dias
+      </p>
+
+      <!-- decorative cards -->
+      <div class="mt-16 flex items-end justify-center gap-3 sm:gap-5">
+        <div class="h-40 w-24 rotate-[-12deg] rounded-xl border border-amber-500/30 bg-gradient-to-b from-indigo-950 to-slate-950 shadow-xl shadow-black/50 sm:h-52 sm:w-32"></div>
+        <div class="h-48 w-28 -translate-y-4 rounded-xl border border-amber-500/50 bg-gradient-to-b from-indigo-900 to-slate-950 shadow-2xl shadow-amber-900/30 animate-float sm:h-64 sm:w-40 flex items-center justify-center">
+          <i data-lucide="moon-star" class="h-10 w-10 text-amber-400/80"></i>
+        </div>
+        <div class="h-40 w-24 rotate-[12deg] rounded-xl border border-amber-500/30 bg-gradient-to-b from-indigo-950 to-slate-950 shadow-xl shadow-black/50 sm:h-52 sm:w-32"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ AVISO AO LEITOR ============ -->
+  <section class="bg-slate-950 px-6 py-20">
+    <div class="mx-auto max-w-3xl">
+      <div class="relative overflow-hidden rounded-2xl border border-amber-500/40 bg-gradient-to-b from-indigo-950/60 to-slate-950 p-8 shadow-2xl shadow-amber-900/10 sm:p-12">
+        <div class="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-amber-500/10 blur-2xl"></div>
+
+        <div class="mb-5 flex items-center gap-3">
+          <span class="flex h-11 w-11 items-center justify-center rounded-full border border-amber-500/40 bg-amber-500/10">
+            <i data-lucide="alert-circle" class="h-5 w-5 text-amber-400"></i>
+          </span>
+          <h2 class="font-serif text-2xl font-bold text-slate-100 sm:text-3xl">Aviso ao Leitor</h2>
+        </div>
+
+        <p class="text-lg leading-relaxed text-slate-300">
+          Este não é um livro comum. As páginas que você está prestes a abrir revelarão verdades profundas
+          sobre quem você realmente é — incluindo aquelas que costumamos esconder de nós mesmos.
+        </p>
+        <p class="mt-4 leading-relaxed text-slate-400">
+          O Tarot, aqui, é tratado como um mapa do inconsciente. Para atravessar essa jornada com integridade,
+          você precisará de <span class="font-medium text-amber-300">mente aberta, coragem e honestidade</span>.
+          Se estiver pronto para enxergar além das aparências, vire a página. A transformação começa agora.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ O QUE TEM DENTRO ============ -->
+  <section class="bg-slate-950 px-6 py-20">
+    <div class="mx-auto max-w-6xl">
+      <div class="mb-14 text-center">
+        <span class="text-sm font-semibold uppercase tracking-[0.2em] text-amber-400">Estrutura do Ebook</span>
+        <h2 class="mt-3 font-serif text-3xl font-bold text-slate-100 sm:text-4xl">
+          Tudo o que você encontrará lá dentro
+        </h2>
+        <p class="mx-auto mt-4 max-w-2xl text-slate-400">
+          Um material denso, estruturado e profundamente prático — pensado para acompanhar você por anos de estudo.
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- card 1 -->
+        <div class="group rounded-2xl border border-slate-800 bg-slate-900/40 p-7 transition hover:-translate-y-1 hover:border-amber-500/40 hover:bg-slate-900/70">
+          <span class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400">
+            <i data-lucide="book-open" class="h-6 w-6"></i>
+          </span>
+          <h3 class="font-serif text-xl font-semibold text-slate-100">10 Capítulos Profundos</h3>
+          <p class="mt-3 text-sm leading-relaxed text-slate-400">
+            Storytelling envolvente, fundamentos psicológicos e citações que conectam cada carta
+            a um arquétipo do inconsciente coletivo.
+          </p>
+        </div>
+
+        <!-- card 2 -->
+        <div class="group rounded-2xl border border-slate-800 bg-slate-900/40 p-7 transition hover:-translate-y-1 hover:border-amber-500/40 hover:bg-slate-900/70">
+          <span class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400">
+            <i data-lucide="layers" class="h-6 w-6"></i>
+          </span>
+          <h3 class="font-serif text-xl font-semibold text-slate-100">Os 22 Arcanos Maiores</h3>
+          <p class="mt-3 text-sm leading-relaxed text-slate-400">
+            Cada arcano mapeado em tabelas estruturadas: <span class="text-amber-300">Amor, Finanças, Espiritual,
+            Mensagem e Conselho</span> — para consultas rápidas e precisas.
+          </p>
+        </div>
+
+        <!-- card 3 -->
+        <div class="group rounded-2xl border border-slate-800 bg-slate-900/40 p-7 transition hover:-translate-y-1 hover:border-amber-500/40 hover:bg-slate-900/70">
+          <span class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400">
+            <i data-lucide="swords" class="h-6 w-6"></i>
+          </span>
+          <h3 class="font-serif text-xl font-semibold text-slate-100">Os 4 Naipes dos Menores</h3>
+          <p class="mt-3 text-sm leading-relaxed text-slate-400">
+            Decomposição simbólica profunda de Copas, Espadas, Ouros e Paus — e como cada naipe reflete
+            uma dimensão da experiência humana.
+          </p>
+        </div>
+
+        <!-- card 4 -->
+        <div class="group rounded-2xl border border-slate-800 bg-slate-900/40 p-7 transition hover:-translate-y-1 hover:border-amber-500/40 hover:bg-slate-900/70">
+          <span class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400">
+            <i data-lucide="route" class="h-6 w-6"></i>
+          </span>
+          <h3 class="font-serif text-xl font-semibold text-slate-100">Tiragens Passo a Passo</h3>
+          <p class="mt-3 text-sm leading-relaxed text-slate-400">
+            5 tiragens práticas explicadas em detalhe, com diagramas e instruções claras para você
+            interpretar com confiança desde a primeira leitura.
+          </p>
+        </div>
+
+        <!-- card 5 -->
+        <div class="group rounded-2xl border border-slate-800 bg-slate-900/40 p-7 transition hover:-translate-y-1 hover:border-amber-500/40 hover:bg-slate-900/70">
+          <span class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400">
+            <i data-lucide="zap" class="h-6 w-6"></i>
+          </span>
+          <h3 class="font-serif text-xl font-semibold text-slate-100">Guia Rápido &amp; Intuição</h3>
+          <p class="mt-3 text-sm leading-relaxed text-slate-400">
+            Inclui <span class="text-amber-300">50 perguntas poderosas</span> para guiar suas leituras e um
+            guia de referência rápida para consultar em qualquer momento.
+          </p>
+        </div>
+
+        <!-- card 6 destaque -->
+        <div class="group flex flex-col justify-center rounded-2xl border border-amber-500/40 bg-gradient-to-br from-amber-500/10 to-indigo-950/40 p-7 transition hover:-translate-y-1">
+          <span class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-amber-500/50 bg-amber-500/20 text-amber-300">
+            <i data-lucide="gem" class="h-6 w-6"></i>
+          </span>
+          <h3 class="font-serif text-xl font-semibold text-slate-100">Conteúdo de Valor Inestimável</h3>
+          <p class="mt-3 text-sm leading-relaxed text-slate-300">
+            Tudo isso reunido em um único material premium, com linguagem acessível e profundidade
+            que você não encontra em cursos caros.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BÔNUS ============ -->
+  <section class="relative overflow-hidden bg-indigo-950/30 px-6 py-20">
+    <div class="pointer-events-none absolute left-1/2 top-0 h-64 w-64 -translate-x-1/2 rounded-full bg-amber-500/10 blur-3xl"></div>
+    <div class="relative mx-auto max-w-6xl">
+      <div class="mb-14 text-center">
+        <span class="text-sm font-semibold uppercase tracking-[0.2em] text-amber-400">Tudo isso e ainda tem mais</span>
+        <h2 class="mt-3 font-serif text-3xl font-bold text-slate-100 sm:text-4xl">
+          Bônus Exclusivos Para Você
+        </h2>
+      </div>
+
+      <div class="grid gap-7 md:grid-cols-3">
+        <!-- bonus 1 -->
+        <div class="relative rounded-2xl border border-amber-500/40 bg-slate-900/60 p-8 shadow-xl shadow-black/40">
+          <span class="absolute -top-3 left-6 rounded-full bg-gradient-to-r from-amber-400 to-yellow-600 px-4 py-1 text-xs font-bold text-slate-950">BÔNUS 1</span>
+          <span class="mb-5 mt-2 flex h-12 w-12 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400">
+            <i data-lucide="quote" class="h-6 w-6"></i>
+          </span>
+          <h3 class="font-serif text-xl font-semibold text-slate-100">100 Afirmações Numeradas do Tarot</h3>
+          <p class="mt-3 text-sm leading-relaxed text-slate-400">
+            Frases de poder, uma para cada energia, para reprogramar sua mente e ancorar suas intenções todos os dias.
+          </p>
+        </div>
+
+        <!-- bonus 2 -->
+        <div class="relative rounded-2xl border border-amber-500/40 bg-slate-900/60 p-8 shadow-xl shadow-black/40">
+          <span class="absolute -top-3 left-6 rounded-full bg-gradient-to-r from-amber-400 to-yellow-600 px-4 py-1 text-xs font-bold text-slate-950">BÔNUS 2</span>
+          <span class="mb-5 mt-2 flex h-12 w-12 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400">
+            <i data-lucide="calendar-check" class="h-6 w-6"></i>
+          </span>
+          <h3 class="font-serif text-xl font-semibold text-slate-100">21 Dias de Prática</h3>
+          <p class="mt-3 text-sm leading-relaxed text-slate-400">
+            Um plano dia a dia que cria o hábito da leitura e acelera o desenvolvimento da sua intuição em apenas três semanas.
+          </p>
+        </div>
+
+        <!-- bonus 3 -->
+        <div class="relative rounded-2xl border border-amber-500/40 bg-slate-900/60 p-8 shadow-xl shadow-black/40">
+          <span class="absolute -top-3 left-6 rounded-full bg-gradient-to-r from-amber-400 to-yellow-600 px-4 py-1 text-xs font-bold text-slate-950">BÔNUS 3</span>
+          <span class="mb-5 mt-2 flex h-12 w-12 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400">
+            <i data-lucide="trending-up" class="h-6 w-6"></i>
+          </span>
+          <h3 class="font-serif text-xl font-semibold text-slate-100">Plano de Evolução</h3>
+          <p class="mt-3 text-sm leading-relaxed text-slate-400">
+            Uma trilha clara que leva você de iniciante a mestre, com marcos e práticas para cada estágio da sua jornada.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OFERTA FINAL & GARANTIA ============ -->
+  <section id="oferta" class="bg-slate-950 px-6 py-24">
+    <div class="mx-auto max-w-3xl">
+      <div class="relative overflow-hidden rounded-3xl border border-amber-500/40 bg-gradient-to-b from-indigo-950/70 to-slate-950 p-8 text-center shadow-2xl shadow-amber-900/20 sm:p-14">
+        <div class="pointer-events-none absolute -top-24 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-amber-500/20 blur-3xl animate-glow"></div>
+
+        <div class="relative">
+          <span class="inline-flex items-center gap-2 rounded-full border border-amber-500/40 bg-amber-500/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-amber-300">
+            <i data-lucide="flame" class="h-4 w-4"></i> Oferta por tempo limitado
+          </span>
+
+          <h2 class="mt-6 font-serif text-3xl font-bold text-slate-100 sm:text-4xl">
+            Sua transformação está a um clique de distância
+          </h2>
+          <p class="mx-auto mt-4 max-w-xl text-slate-400">
+            O guia completo + os 22 arcanos mapeados + tiragens práticas + os 3 bônus exclusivos.
+            Tudo com acesso imediato e vitalício.
+          </p>
+
+          <div class="mt-8 flex items-center justify-center gap-3">
+            <span class="text-lg text-slate-500 line-through">R$ 197</span>
+            <span class="font-serif text-5xl font-bold gold-text">R$ 47</span>
+          </div>
+          <p class="mt-2 text-sm text-slate-500">ou 12x de R$ 4,70</p>
+
+          <a href="#"
+             class="group mt-9 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 to-yellow-600 px-8 py-4 text-base font-bold text-slate-950 shadow-lg shadow-amber-900/40 transition hover:scale-[1.02] hover:shadow-amber-700/50 sm:w-auto">
+            Quero Transformar Minha Jornada Agora
+            <i data-lucide="arrow-right" class="h-5 w-5 transition group-hover:translate-x-1"></i>
+          </a>
+
+          <div class="mt-8 flex flex-col items-center justify-center gap-3 text-sm text-slate-400 sm:flex-row sm:gap-6">
+            <span class="flex items-center gap-2"><i data-lucide="shield-check" class="h-4 w-4 text-amber-400"></i> Garantia de 7 dias</span>
+            <span class="flex items-center gap-2"><i data-lucide="lock" class="h-4 w-4 text-amber-400"></i> Pagamento 100% seguro</span>
+            <span class="flex items-center gap-2"><i data-lucide="download" class="h-4 w-4 text-amber-400"></i> Acesso imediato</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-slate-800 bg-slate-950 px-6 py-10">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 text-sm text-slate-500 sm:flex-row">
+      <div class="flex items-center gap-2 font-serif text-base text-slate-300">
+        <i data-lucide="moon-star" class="h-5 w-5 text-amber-400"></i>
+        O Guia Definitivo de Tarot
+      </div>
+      <nav class="flex gap-6">
+        <a href="#" class="transition hover:text-amber-400">Termos de Uso</a>
+        <a href="#" class="transition hover:text-amber-400">Privacidade</a>
+        <a href="#" class="transition hover:text-amber-400">Contato</a>
+      </nav>
+      <p>&copy; 2026 Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
